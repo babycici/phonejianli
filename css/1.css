@@ -1,0 +1,651 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.dp {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.first {
+  width: 100%;
+  height: 100%;
+  z-index: 20000000000;
+  position: absolute;
+}
+.first .firstImg {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  width: 6rem;
+  left: 4%;
+  display: block;
+  top: 17%;
+}
+.first .firstImg img {
+  width: 100%;
+  position: absolute;
+  animation: move 1s;
+}
+.first .firstImg h2 {
+  color: #315b54;
+  position: absolute;
+  z-index: 3;
+  top: 3.5rem;
+  left: 2rem;
+  font-size: 0.3rem;
+  animation: mymove 1s;
+}
+.headertt {
+  height: 100%;
+}
+header {
+  z-index: 1000000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/backgrund.PNG') repeat;
+  color: #fff;
+  z-index: 30;
+}
+header .music {
+  position: absolute;
+  width: 0.65rem;
+  height: 0.65rem;
+  float: right;
+  top: 0.29rem;
+  right: 0.3rem;
+  background-image: url(../img/music.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: mymove1 3s linear infinite;
+}
+header .nav1 {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  left: 0.2rem;
+  top: 1.3rem;
+}
+header .nav1 h1 {
+  color: #315b54;
+  position: absolute;
+  z-index: 3;
+  opacity: 1;
+  top: 28%;
+  left: 50%;
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+header .nav1 img {
+  width: 100%;
+  height: 100%;
+  animation-duration: 5s;
+}
+header .nav2 h1 {
+  color: #315b54;
+  position: absolute;
+  bottom: 43;
+  z-index: 3;
+  top: 8rem;
+  left: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+.userInfo {
+  z-index: 10000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.userInfo .park1 span {
+  font-size: 0.5rem;
+  background-color: #315b54;
+  padding-right: 0.43rem;
+}
+.userInfo .park1 span:nth-child(2) {
+  font-size: 0.5rem;
+  padding-right: 0.23rem;
+  background: none;
+  color: #315b54;
+  animation: mymove4 3s 9s infinite ;
+}
+.userInfo .park1Box {
+  position: relative;
+  top: 5%;
+  left: 8%;
+  animation: mymove2 5s 1;
+}
+.userInfo .park1Box img {
+  width: 85%;
+  height: 100%;
+  animation: mymove3 5s 1;
+}
+.userInfo .park1Box .touxiang {
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  left: 28%;
+}
+.userInfo .park1Box ul {
+  list-style: none;
+  font-size: 0.3rem;
+  position: absolute;
+  top: 34%;
+  color: #315b54;
+  left: 15%;
+}
+.workbox {
+  z-index: 100000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.workbox .park2 span {
+  font-size: 0.4rem;
+  background-color: #315b54;
+  padding-right: 0.4rem;
+}
+.workbox .park2 span:nth-child(2) {
+  font-size: 0.3rem;
+  padding-right: 0.23rem;
+  background: none;
+  color: #315b54;
+  animation: mymove4 14s forwards;
+}
+.workbox ul {
+  margin-left: 0.8rem;
+  list-style: none;
+  margin-top: 0.7rem;
+}
+.workbox ul li {
+  line-height: 2rem;
+}
+.workbox ul li p {
+  font-size: 0.5rem;
+  float: right;
+  margin-right: 1.5rem;
+  line-height: 0.4rem;
+  margin-top: 0.1rem;
+  color: lightseagreen;
+}
+.workbox ul li p a {
+  font-size: 0.3rem;
+  color: #315b54;
+}
+.goalbox {
+  z-index: 170;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.goalbox .park1 span {
+  font-size: 0.5rem;
+  background-color: #315b54;
+  padding-right: 0.4rem;
+}
+.goalbox .park1 span:nth-child(2) {
+  font-size: 0.5rem;
+  padding-right: 0.23rem;
+  background: none;
+  color: #315b54;
+  animation: mymove4 3s infinite;
+}
+.goalbox ul {
+  width: 80%;
+}
+.goalbox ul li {
+  font-size: 0.26rem;
+  border: 0.02rem solid #cacaca;
+  float: left;
+  border-radius: 0.1rem;
+  color: #315b54;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.goalbox ul li div img {
+  margin-top: 0.2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  animation: mymove8 1 2s;
+}
+.goalbox ul li div span {
+  display: inline-block;
+  width: 3.3rem;
+  vertical-align: 0.1rem;
+  animation: mymove9 2s;
+}
+.goalbox ul .tow {
+  font-size: 0.26rem;
+  border: 0.02rem solid #cacaca;
+  float: left;
+  border-radius: 0.1rem;
+  color: #315b54;
+  list-style: none;
+  width: 100%;
+}
+.goalbox ul .tow div img {
+  margin-top: -4.8rem;
+  display: inline-block;
+  margin-left: 3.7rem;
+  animation: mymove8 1 2s;
+}
+.goalbox ul .tow div span {
+  display: inline-block;
+  margin-top: rem;
+  width: 3.3rem;
+  vertical-align: -0.7rem;
+  margin-left: 0.8rem;
+  animation: mymove6 2s;
+}
+.goalbox ul .three {
+  font-size: 0.26rem;
+  border: 0.02rem solid #cacaca;
+  float: left;
+  border-radius: 0.1rem;
+  color: #315b54;
+  list-style: none;
+  width: 100%;
+}
+.goalbox ul .three div img {
+  margin-top: 0.2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  animation: mymove8 1 2s;
+}
+.goalbox ul .three div span {
+  display: inline-block;
+  width: 3.2rem;
+  vertical-align: 0.1rem;
+}
+.pessionbox {
+  z-index: 2000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.pessionbox .park2 span {
+  font-size: 0.5rem;
+  background-color: #315b54;
+  padding-right: 0.3rem;
+}
+.pessionbox .park2 span:nth-child(2) {
+  font-size: 0.45rem;
+  padding-right: 0.23rem;
+  background: none;
+  color: #315b54;
+  animation: mymove4 3s infinite;
+}
+.pessionbox .treebox {
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.pessionbox .textbox {
+  font-size: 0.3rem;
+  animation: mymove5 1s;
+}
+.pessionbox .textbox p {
+  width: 80%;
+  margin-left: 0.8rem;
+  color: #315b54;
+}
+.competitonBox {
+  z-index: 190;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.competitonBox .park1 span {
+  font-size: 0.5rem;
+  background-color: #315b54;
+  padding-right: 0.3rem;
+}
+.competitonBox .park1 span:nth-child(2) {
+  font-size: 0.45rem;
+  padding-right: 0.23rem;
+  background: none;
+  color: #315b54;
+  animation: mymove4 3s infinite;
+}
+.competitonBox .handBox {
+  margin-left: 1.7rem;
+}
+.competitonBox .handBoxs .handBox1 {
+  width: 85%;
+}
+.competitonBox .handBoxs .handBox1 h6 {
+  font-size: 0.35rem;
+  margin-left: 0.8rem;
+  background-color: #315b54;
+  animation: mymove6 1s;
+  margin-bottom: 0.4rem;
+}
+.competitonBox .handBoxs .handBox1 p {
+  margin-bottom: 0.4rem;
+  margin-left: 0.8rem;
+  font-size: 0.25rem;
+  width: 80%;
+  color: #315b54;
+  animation: mymove7 2s;
+}
+.pessionbox1 {
+  z-index: 180;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.pessionbox1 .park2 span {
+  font-size: 0.5rem;
+  background-color: #315b54;
+  padding-right: 0.3rem;
+}
+.pessionbox1 .park2 span:nth-child(2) {
+  font-size: 0.45rem;
+  padding-right: 0.23rem;
+  background: none;
+  color: #315b54;
+  animation: mymove4 3s infinite;
+}
+.pessionbox1 .treebox {
+  margin-top: 0.5rem;
+  margin-left: 1.1rem;
+}
+.pessionbox1 .teambox {
+  margin-left: 2rem;
+}
+.pessionbox1 .teambox p {
+  background: #315b54;
+  width: 60%;
+  font-size: 0.4rem;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.pessionbox1 .textbox {
+  font-size: 0.3rem;
+  animation: mymove5 1s;
+}
+.pessionbox1 .textbox p {
+  width: 80%;
+  margin-left: 0.8rem;
+  color: #315b54;
+}
+.last {
+  z-index: 150;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.last .firstImg {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  width: 6rem;
+  left: 4%;
+  display: block;
+  top: 11%;
+}
+.last .firstImg img {
+  width: 100%;
+  position: absolute;
+  animation: move 1s;
+}
+.last .firstImg h2 {
+  color: #333;
+  position: absolute;
+  z-index: 3;
+  top: 3.5rem;
+  left: 2.5rem;
+  font-size: 0.3rem;
+  animation: mymove 1s;
+}
+.last .weixinBox {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 2.3rem;
+}
+.last .weixinBox img {
+  width: 120%;
+}
+.headerone {
+  z-index: 200;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.headerone header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: url('../img/backgrund.PNG') repeat;
+  color: #fff;
+  z-index: 30;
+}
+.headerone header .music {
+  position: absolute;
+  width: 0.65rem;
+  height: 0.65rem;
+  float: right;
+  top: 0.29rem;
+  right: 0.3rem;
+  background-image: url(../img/music.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: mymove1 3s infinite;
+}
+.headerone header .nav1 {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  left: 0.2rem;
+  top: 1.3rem;
+}
+.headerone header .nav1 h1 {
+  color: #315b54;
+  position: absolute;
+  z-index: 3;
+  opacity: 1;
+  top: 28%;
+  left: 50%;
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.headerone header .nav1 img {
+  width: 100%;
+  height: 100%;
+  animation-duration: 5s;
+}
+.headerone header .nav2 h1 {
+  color: #315b54;
+  position: absolute;
+  bottom: 43;
+  z-index: 3;
+  top: 8rem;
+  left: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+.headertwo {
+  z-index: 170;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.headertwo header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: url('../img/backgrund.PNG') repeat;
+  color: #fff;
+  z-index: 30;
+}
+.headertwo header .music {
+  position: absolute;
+  width: 0.65rem;
+  height: 0.65rem;
+  float: right;
+  top: 0.29rem;
+  right: 0.3rem;
+  background-image: url(../img/music.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: mymove1 3s infinite;
+}
+.headertwo header .nav1 {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  left: 0.2rem;
+  top: 1.3rem;
+}
+.headertwo header .nav1 h1 {
+  color: #315b54;
+  position: absolute;
+  z-index: 3;
+  opacity: 1;
+  top: 28%;
+  left: 50%;
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.headertwo header .nav1 img {
+  width: 100%;
+  height: 100%;
+  animation-duration: 5s;
+}
+.headertwo header .nav2 h1 {
+  color: #315b54;
+  position: absolute;
+  bottom: 43;
+  z-index: 3;
+  top: 8rem;
+  left: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+@keyframes move {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes mymove {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+@keyframes mymove1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mymove2 {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes mymove3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mymove4 {
+  0% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    transform: translateX(-0.3rem);
+  }
+}
+@keyframes mymove5 {
+  0% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0.4rem);
+  }
+}
+@keyframes mymove6 {
+  0% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+@keyframes mymove7 {
+  0% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+@keyframes mymove8 {
+  0% {
+    transform: scale(1, -1);
+  }
+  100% {
+    transform: scaleY(2, 1);
+  }
+}
+@keyframes mymove9 {
+  0% {
+    transform: translateX(3rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
